@@ -1,0 +1,13 @@
+C:\Users\paulo.anjos\Documents\prj\httper\bin\Debug\netcoreapp3.1\httper.exe
+C:\Users\paulo.anjos\Documents\prj\httper\bin\Debug\netcoreapp3.1\httper.deps.json
+C:\Users\paulo.anjos\Documents\prj\httper\bin\Debug\netcoreapp3.1\httper.runtimeconfig.json
+C:\Users\paulo.anjos\Documents\prj\httper\bin\Debug\netcoreapp3.1\httper.runtimeconfig.dev.json
+C:\Users\paulo.anjos\Documents\prj\httper\bin\Debug\netcoreapp3.1\httper.dll
+C:\Users\paulo.anjos\Documents\prj\httper\bin\Debug\netcoreapp3.1\httper.pdb
+C:\Users\paulo.anjos\Documents\prj\httper\obj\Debug\netcoreapp3.1\httper.csprojAssemblyReference.cache
+C:\Users\paulo.anjos\Documents\prj\httper\obj\Debug\netcoreapp3.1\httper.AssemblyInfoInputs.cache
+C:\Users\paulo.anjos\Documents\prj\httper\obj\Debug\netcoreapp3.1\httper.AssemblyInfo.cs
+C:\Users\paulo.anjos\Documents\prj\httper\obj\Debug\netcoreapp3.1\httper.csproj.CoreCompileInputs.cache
+C:\Users\paulo.anjos\Documents\prj\httper\obj\Debug\netcoreapp3.1\httper.dll
+C:\Users\paulo.anjos\Documents\prj\httper\obj\Debug\netcoreapp3.1\httper.pdb
+C:\Users\paulo.anjos\Documents\prj\httper\obj\Debug\netcoreapp3.1\httper.genruntimeconfig.cache
