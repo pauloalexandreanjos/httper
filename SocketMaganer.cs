@@ -11,10 +11,10 @@ namespace httper
     {
 		private static byte[] buffer = new byte[1024];
 		
-		private static Socket getSocket()
+		private static Socket getSocket(string ip, int port)
 		{
-			IPAddress ipAddress = IPAddress.Parse("127.0.0.1");
-            IPEndPoint remoteEP = new IPEndPoint(ipAddress,80);  
+			IPAddress ipAddress = IPAddress.Parse(ip);
+            IPEndPoint remoteEP = new IPEndPoint(ipAddress,port);
 			
 			Socket conn = new Socket(ipAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp );
             
@@ -25,10 +25,18 @@ namespace httper
 	
 		public static void Send()
 		{
-			
-			
+			Send("127.0.0.1", 80);
+		}
+		
+		public static void Send(string ip)
+		{
+			Send(ip, 80);
+		}
+		
+		public static void Send(string ip, int port)
+		{
 			try {
-				var conn = getSocket();
+				var conn = getSocket(ip, port);
 				
 				Console.WriteLine("Socket connected to {0}", conn.RemoteEndPoint.ToString());
 				

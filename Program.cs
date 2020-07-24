@@ -26,10 +26,14 @@ namespace httper
 						
 					case "set":
 						if (cmds.Length < 3) {
-							Console.WriteLine("error! usage: set key value");
+							Console.WriteLine("error! usage: set  key value");
 							break;
 						}
-						Inst().SetParam(cmds[1], cmds[2]);
+						
+						if (cmds[1] == "header" || cmds[1] == "h") {
+							Inst().SetParam(cmds[2], cmds[3]);
+						}
+						
 						break;
 						
 					case "del":
@@ -52,9 +56,21 @@ namespace httper
 						break;
 						
 					case "send":
-						SocketManager.Send();
+						if (cmds.Length < 2) {
+							SocketManager.Send();
+							break;
+						}
+						if (cmds.Length == 2) {
+							SocketManager.Send(cmds[1]);
+							break;
+						}
+						if (cmds.Length == 3) {
+							//try {
+							SocketManager.Send(cmds[1],int.Parse(cmds[2]));
+							break;
+							//} catch ()
+						}
 						break;
-						
 					default:
 						break;
 				}
