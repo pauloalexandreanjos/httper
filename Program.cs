@@ -82,5 +82,4 @@ namespace httper
 			return Httper.GetInstance();
 		}
     }
-	
 }
